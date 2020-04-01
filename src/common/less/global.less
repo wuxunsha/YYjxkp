@@ -1,0 +1,145 @@
+// 默认背景色
+@default-bg-color: #ffffff;
+
+// 字体默认样式
+.font-defalut {
+  font-weight: 500;
+}
+
+// 按钮的默认样式
+.ivu-btn {
+  border-radius: .625rem;
+  padding: .2875rem 1.875rem;
+  height: 2.75rem;
+  > span {
+    font-size: 1rem;
+    vertical-align: initial;
+  }
+}
+.ivu-btn-primary,
+.ivu-btn-default {
+  .font-defalut;
+  font-size: .9375rem;
+}
+
+// 顶部搜索区域
+.header-search {
+  width: 100%;
+  height: 4.3125rem;
+  background-color: @default-bg-color;
+  display: flex;
+  align-items: center;
+  padding: 0 3.125rem;
+}
+.col {
+  display: flex;
+  align-items: center;
+  margin-left: 10px;
+  .span {
+    .font-defalut;
+    font-weight: bold;
+    font-size: .9375rem;
+    color: #333333;
+    display: inline-block;
+    width: 50px;
+    &-max {
+      width: 140px;
+    }
+  }
+}
+.custome-btn {
+  height: 2.25rem;
+}
+.custome-btn-default {
+  margin-left: 1.25rem;
+  background:rgba(202,228,255,1);
+  color: #0972E7;
+}
+
+// 内容区域
+.content {
+  background-color: @default-bg-color;
+  margin-top: .625rem;
+  padding: 1.25rem 3.125rem;
+  // 新增业务
+  .btn-add {
+    margin: 1.25rem 0;
+  }
+  // 分页
+  .page {
+    display: flex;
+    justify-content: center;
+    margin-top: 1.25rem;
+  }
+}
+
+// table
+/deep/ .tb-header {
+  .font-defalut;
+  color: #666666;
+  font-size: 15px;
+}
+// 表格header
+/deep/ .ivu-table-header .tb-header{
+  height: 3.4375rem;
+  background-color: rgba(239, 247, 255, 1);
+  font-weight: bold;
+  color: #333333;
+  font-size: 1.0625rem;
+}
+/deep/ .tb-row-odd td {
+  background-color: #ffffff;
+  height: 3.4375rem;
+}
+/deep/ .tb-row-even td {
+  background-color: rgba(239,247,255,1);
+  height: 3.4375rem;
+}
+/deep/ .ivu-table-wrapper,
+/deep/ .ivu-table th, 
+/deep/ .ivu-table td {
+  border: none;
+}
+/deep/ .ivu-table-header table thead tr .ivu-table {
+  .font-defalut;
+  color: #333333;
+  font-weight: bold;
+  font-size: 15px;
+  height: 3.75rem;
+}
+/deep/ .ivu-table:before,
+/deep/ .ivu-table:after {
+  background-color: transparent;
+}
+
+// Modal
+.vertical-center-modal{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  .ivu-modal{
+    top: 0;
+  }
+  .add-header {
+    display: flex;
+    justify-content: center;
+    font-weight: 500;
+    padding: .625rem 0;
+  }
+  .footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: .625rem 0;
+    .ivu-btn .ivu-btn-primary {
+      width: 6.25rem;
+    }
+  }
+}
+/deep/ textarea.ivu-input {
+  height: 200px;
+}
+/deep/.ivu-input-word-count {
+  background-color: transparent;
+}
+

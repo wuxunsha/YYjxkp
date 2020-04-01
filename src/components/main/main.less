@@ -1,0 +1,102 @@
+// 顶部header
+@header-height: 89px;
+// 面包屑导航
+@bread-nav-height: 64px;
+// 历史记录导航
+@history-nav-height: 38px;
+
+.main-header {
+  background: #0972E7!important;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: @header-height;
+  .title {
+    font-size:30px;
+    font-family:PingFang SC;
+    font-weight:400;
+    line-height:35px;
+    color:rgba(255,255,255,1);
+    opacity:1;
+  }
+}
+.main{
+  height: calc(~'100% - @{header-height}');
+  .logo-con{
+    height: 64px;
+    padding: 10px;
+    img{
+      height: 44px;
+      width: auto;
+      display: block;
+      margin: 0 auto;
+    }
+  }
+  .header-con{
+    background: #fff;
+    padding: 0 20px;
+    width: 100%;
+  }
+  .main-layout-con{
+    height: 100%;
+    overflow: hidden;
+  }
+  .main-content {
+    height: calc(~"100vh - @{header-height}");
+  }
+  .main-content-con{
+    height: calc(~"100% - @{bread-nav-height}");
+    overflow: hidden;
+  }
+  .tag-nav-wrapper{
+    padding: 0;
+    height:40px;
+    background:#F0F0F0;
+  }
+  .content-wrapper{
+    padding: 18px;
+    height: calc(~"100% - @{header-height} - @{bread-nav-height} - @{history-nav-height}");
+    overflow: auto;
+    padding-bottom: 20px;
+  }
+  .left-sider{
+    .ivu-layout-sider-children{
+      overflow-y: scroll;
+      margin-right: -18px;
+    }
+  }
+}
+.ivu-menu-item > i{
+  margin-right: 12px !important;
+}
+.ivu-menu-submenu > .ivu-menu > .ivu-menu-item > i {
+  margin-right: 8px !important;
+}
+.collased-menu-dropdown{
+  width: 100%;
+  margin: 0;
+  line-height: normal;
+  padding: 7px 0 6px 16px;
+  clear: both;
+  font-size: 12px !important;
+  white-space: nowrap;
+  list-style: none;
+  cursor: pointer;
+  transition: background 0.2s ease-in-out;
+  &:hover{
+    background: rgba(100, 100, 100, 0.1);
+  }
+  & * {
+    color: #515a6e;
+  }
+  .ivu-menu-item > i{
+    margin-right: 12px !important;
+  }
+  .ivu-menu-submenu > .ivu-menu > .ivu-menu-item > i {
+    margin-right: 8px !important;
+  }
+}
+
+.ivu-select-dropdown.ivu-dropdown-transfer{
+  max-height: 400px;
+}

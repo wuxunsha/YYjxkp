@@ -1,0 +1,67 @@
+@wrapper: ~'department';
+.percent-100 {
+  width: 100%;
+  height: 100%;
+}
+.@{wrapper}-outer {
+  .percent-100;
+  overflow: hidden;
+  .view-box {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    cursor: move;
+    .org-tree-drag-wrapper {
+      width: 100%;
+      height: 100%;
+    }
+    .org-tree-wrapper {
+      display: inline-block;
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transition: transform 0.2s ease-out;
+      .org-tree-node-label {
+        .org-tree-node-label-inner {
+          padding: 4px;
+          border-radius: 10px;
+          background: #CAE4FF;
+          .custom-org-node {
+            padding: 12px 46px;
+            background: #0972E7;
+            user-select: none;
+            word-wrap: none;
+            white-space: nowrap;
+            border-radius: 10px;
+            color: #ffffff;
+            font-size: 18px;
+            font-weight: 500;
+            line-height: 18px;
+            transition: background 0.1s ease-in;
+            cursor: pointer;
+            &:hover {
+              background: #FF9B29;
+              transition: background 0.1s ease-in;
+            }
+            &.has-children-label {
+              cursor: pointer;
+            }
+            .context-menu{
+              position: absolute;
+              right: -10px;
+              bottom: 20px;
+              z-index: 10;
+            }
+          }
+          &:hover {
+            background: #FFEBD4;
+            transition: background 0.1s ease-in;
+          }
+        }
+      }
+    }
+  }
+}

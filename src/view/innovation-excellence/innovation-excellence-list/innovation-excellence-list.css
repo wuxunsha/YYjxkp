@@ -1,0 +1,305 @@
+ /deep/ .ivu-input:focus {
+  box-shadow: none;
+}
+ /deep/ .ivu-select-selection {
+  box-shadow: none;
+}
+ /deep/ .ivu-modal-body {
+  padding: 0;
+}
+.addTemplate /deep/ .ivu-modal-footer {
+  border-top: 0;
+  display: none;
+}
+ /deep/ .ivu-table:after {
+  width: 0;
+}
+ /deep/ .ivu-table:before {
+  height: 0;
+}
+ /deep/ .ivu-table th {
+  border-bottom: none;
+  background-color: #EFF7FF;
+  text-align: center;
+}
+ /deep/ .ivu-table td {
+  border-bottom: none;
+  text-align: center;
+}
+.ivu-form-item {
+  margin-top: 10px;
+  margin-bottom: 0;
+}
+ /deep/ .ivu-form-item-label {
+  width: 70px;
+  text-align: center;
+}
+ /deep/ .ivu-form-item-content {
+  margin-left: 80px;
+}
+ /deep/ .ivu-table-stripe .ivu-table-body tr:nth-child(2n) td {
+  background-color: #EFF7FF;
+}
+.form-content {
+  /* 查询区域 */
+}
+.form-content .inquire {
+  background: #fff;
+  padding: 18px 20px;
+  /* 标题查询 */
+  /* 查询时间开始 */
+  /* 查询时间 */
+  /* 状态查询 */
+  /* 查询区域 */
+}
+.form-content .inquire .inquire-title {
+  margin-right: 10px;
+}
+.form-content .inquire .inquire-title span {
+  font-size: 16px;
+  color: #333;
+  margin-right: 10px;
+  vertical-align: bottom;
+}
+.form-content .inquire .inquire-title .title-input {
+  width: 80%;
+  height: 30px;
+  border: none;
+  border-radius: 8px;
+}
+.form-content .inquire .inquire-time-start {
+  margin-right: 10px;
+}
+.form-content .inquire .inquire-time-start span {
+  font-size: 16px;
+  color: #333;
+  margin-right: 10px;
+  vertical-align: bottom;
+}
+.form-content .inquire .inquire-time-start .classify-select {
+  width: 90%;
+  height: 30px;
+  border: none;
+  border-radius: 8px;
+  background: #F3F3F3;
+  outline: none;
+}
+.form-content .inquire .inquire-time-end {
+  margin-right: 10px;
+}
+.form-content .inquire .inquire-time-end span {
+  font-size: 16px;
+  color: #333;
+  margin-right: 20px;
+  vertical-align: bottom;
+}
+.form-content .inquire .inquire-time-end .classify-select {
+  width: 70%;
+  height: 30px;
+  border: none;
+  border-radius: 8px;
+  background: #F3F3F3;
+  outline: none;
+}
+.form-content .inquire .inquire-status {
+  margin-right: 10px;
+}
+.form-content .inquire .inquire-status span {
+  font-size: 16px;
+  color: #333;
+  margin-right: 10px;
+  vertical-align: bottom;
+}
+.form-content .inquire .inquire-status .status-select {
+  width: 70%;
+  height: 30px;
+  border: none;
+  border-radius: 8px;
+  background: #F3F3F3;
+  outline: none;
+}
+.form-content .inquire .search-area {
+  text-align: center;
+}
+.form-content .inquire .search-area .search-btn {
+  width: 120px;
+  height: 30px;
+  background-color: #0972E7;
+  border: none;
+  font-size: 16px;
+  color: #fff;
+  border-radius: 8px;
+  outline: none;
+  cursor: pointer;
+}
+.form-content .inquire .search-area .empty-btn {
+  width: 120px;
+  height: 30px;
+  background-color: #CAE4FF;
+  border: none;
+  font-size: 16px;
+  color: #0972E7;
+  border-radius: 8px;
+  outline: none;
+  cursor: pointer;
+}
+.form-content .from-content {
+  margin-top: 14px;
+  padding: 16px 20px 0;
+  background-color: #fff;
+  /* 插件模板按钮 */
+  /* 分页 */
+}
+.form-content .from-content .create {
+  margin-bottom: 14px;
+}
+.form-content .from-content .create .create-template .create-btn {
+  height: 44px;
+  padding: 0 40px;
+  background: #0972e7;
+  border-radius: 10px;
+  font-size: 14px;
+  font-weight: 500;
+  color: #ffffff;
+}
+.form-content .from-content .page {
+  text-align: center;
+  padding: 34px 0 100px;
+}
+/* 创建社会评价模板 */
+.modal-information /deep/ .ivu-modal-content {
+  padding: 30px 60px;
+}
+.modal-information .modal-title {
+  color: #333;
+  text-align: center;
+  font-size: 20px;
+  height: 50px;
+  line-height: 50px;
+  border-bottom: 0;
+}
+.modal-information .modal-content {
+  text-align: left;
+}
+.modal-information .modal-content /deep/ .ivu-select {
+  width: 50%;
+}
+.modal-information div.modal-content {
+  text-align: left;
+}
+.modal-information .modal-footer {
+  text-align: center;
+  margin-top: 40px;
+}
+.modal-information .modal-footer .add-btn {
+  width: 382px;
+  height: 56px;
+  border: none;
+  border-radius: 8px;
+  background: #0972e7;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 40px;
+  color: #ffffff;
+}
+.ivu-steps .ivu-steps-head,
+.ivu-steps .ivu-steps-main {
+  vertical-align: center;
+}
+.performance-item {
+  margin-bottom: 15px;
+}
+.performance-item .performance-title {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+.performance-item .performance-title .main-title {
+  color: #333333;
+  font-weight: bold;
+}
+.performance-item p {
+  padding-left: 25px;
+  color: #888888;
+}
+.performance-item .annex {
+  padding-left: 25px;
+  margin-bottom: 10px;
+  display: flex;
+}
+.performance-item .annex .annex-item {
+  width: 30px;
+  height: 35px;
+  background-color: #0972E7;
+  margin-right: 10px;
+}
+.performance-item .annex-form {
+  padding-left: 25px;
+  display: flex;
+}
+.performance-item .annex-form .annex-form-item {
+  display: flex;
+  align-items: center;
+  margin-right: 10px;
+  cursor: pointer;
+}
+.performance-item .annex-form .annex-form-item .origin-mark {
+  background-color: #BBBBBB;
+}
+.performance-item .annex-form .annex-form-item .origin-text {
+  color: #BBBBBB;
+}
+.performance-item .annex-form .annex-form-item .origin-select {
+  background-color: #FF9B29 !important;
+}
+.performance-item .annex-form .annex-form-item .origin-text-select {
+  color: #FF9B29 !important;
+}
+.performance-item /deep/ .ivu-input {
+  margin-left: 25px;
+  background-color: #fff;
+  border: 1px solid #5EADFF;
+}
+.performance-last-item {
+  margin-left: 25px;
+}
+.performance-last-item button {
+  margin-bottom: 10px;
+  border: 0;
+}
+.performance-last-item p {
+  margin-bottom: 5px;
+}
+.performance-last-item .processing-time {
+  height: 30px;
+}
+.performance-last-item .processing-time div {
+  float: right;
+  color: #CCCCCC;
+}
+.origin-mark {
+  width: 15px;
+  height: 15px;
+  background-color: #0972E7;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+.origin-mark div {
+  width: 10px;
+  height: 10px;
+  border: 2px solid #fff;
+  border-radius: 50%;
+  margin: 0 auto;
+  margin-top: 50%;
+  transform: translateY(-50%);
+}
+.add-rule-item {
+  display: flex;
+  align-items: center;
+}
+.add-rule-item div {
+  margin-left: 10px;
+}
+.add-rule-item /deep/ .ivu-input-wrapper {
+  width: 75%;
+}

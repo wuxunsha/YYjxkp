@@ -1,0 +1,65 @@
+.percent-100 {
+  width: 100%;
+  height: 100%;
+}
+.department-outer {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+.department-outer .view-box {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  cursor: move;
+}
+.department-outer .view-box .org-tree-drag-wrapper {
+  width: 100%;
+  height: 100%;
+}
+.department-outer .view-box .org-tree-wrapper {
+  display: inline-block;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transition: transform 0.2s ease-out;
+}
+.department-outer .view-box .org-tree-wrapper .org-tree-node-label .org-tree-node-label-inner {
+  padding: 4px;
+  border-radius: 10px;
+  background: #CAE4FF;
+}
+.department-outer .view-box .org-tree-wrapper .org-tree-node-label .org-tree-node-label-inner .custom-org-node {
+  padding: 12px 46px;
+  background: #0972E7;
+  user-select: none;
+  word-wrap: none;
+  white-space: nowrap;
+  border-radius: 10px;
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 18px;
+  transition: background 0.1s ease-in;
+  cursor: pointer;
+}
+.department-outer .view-box .org-tree-wrapper .org-tree-node-label .org-tree-node-label-inner .custom-org-node:hover {
+  background: #FF9B29;
+  transition: background 0.1s ease-in;
+}
+.department-outer .view-box .org-tree-wrapper .org-tree-node-label .org-tree-node-label-inner .custom-org-node.has-children-label {
+  cursor: pointer;
+}
+.department-outer .view-box .org-tree-wrapper .org-tree-node-label .org-tree-node-label-inner .custom-org-node .context-menu {
+  position: absolute;
+  right: -10px;
+  bottom: 20px;
+  z-index: 10;
+}
+.department-outer .view-box .org-tree-wrapper .org-tree-node-label .org-tree-node-label-inner:hover {
+  background: #FFEBD4;
+  transition: background 0.1s ease-in;
+}

@@ -1,0 +1,88 @@
+// input 高度
+@input-height: 4.375rem;
+// 圆角值
+@border-radius: .875rem;
+// 字体宽度
+@font-weight-400: 400;
+
+.login {
+    width: 100%;
+    height: 100%;
+    background-image: url('../../assets/images/login/bg-login.png');
+    background-size: cover;
+    background-position: center;
+    &-box {
+        background-color: #fff;
+        background-image: url('../../assets//images/login/bg-login-input.png');
+        background-size: cover;
+        background-position: center;
+        border-radius: .9375rem;
+        .header {
+            font-size: 2.3125rem;
+            color: rgba(51, 51, 51, 1);
+            text-align: center;
+            margin-top: 3.75rem;
+            font-weight: @font-weight-400;
+        }
+    }
+    &-form {
+        margin-top: 1.875rem;
+        margin-bottom: 30px;
+        .ivu-icon-md-person,
+        .ivu-icon-md-lock,
+        .ivu-icon-md-key {
+            line-height: @input-height;
+        }
+    
+        .ivu-form-item-content-custome {
+            margin-top: 2rem;
+        }
+        .ivu-input-prefix {
+            left: .6rem;
+        }
+        .ivu-input-icon {
+            top: 1.25rem;
+        }
+        /deep/ .ivu-input {
+            background-color: #F3F3F3;
+            height: @input-height;
+            font-weight: @font-weight-400;
+            font-size: 1.25rem;
+            border-radius: @border-radius;
+            border: none;
+            padding-left: 2.5rem;
+        }
+        .code-view {
+            width: 100%;
+            height: 100%;
+            border-radius: @border-radius;
+            background: #F3F3F3;
+            height: @input-height;
+            line-height: @input-height;
+            text-align: center;
+            font-size: 1.875rem;
+            >img {
+                width: 100%;
+                height: 100%;
+            }
+        }
+        .btn-login {
+            .ivu-btn-large {
+                width: 100%;
+                height: @input-height;
+                border-radius: @border-radius;
+                font-size: 1.625rem;
+                font-family: 'PingFang-SC-Bold';
+                letter-spacing: .625rem;
+                /deep/ span {
+                    line-height: inherit;
+                    vertical-align: top;
+                    text-align: center;
+                }
+            }
+            .ivu-icon-ios-loading {
+                padding-left: .6875rem;
+            }
+        }
+    }
+}
